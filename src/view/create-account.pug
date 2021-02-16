@@ -1,0 +1,13 @@
+include templates/header.pug 
+
+h1 Create an #{org_name} Account 
+
+form(action="/api/account/create", method="post")
+  input(type="text", name="firstName")
+  input(type="text" name="lastName")
+  input(type="text" name="phoneNum")
+  input(type="password" name="password")
+  input(type="password", name="passwordConfirm")
+  input(type="submit", value="submission")
+
+include templates/footer.pug
